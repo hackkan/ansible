@@ -1,0 +1,6 @@
+---
+  - name: connectivity check
+    hosts: div
+    tasks:
+     - name: ping check
+       ping:
