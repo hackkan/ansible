@@ -8,5 +8,5 @@
         line: void
     - name: Restart service httpd, in all cases
       ansible.builtin.service:
-        name: proxmox
+        name: pveproxy.service
         state: restarted
