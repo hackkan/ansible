@@ -1,5 +1,8 @@
-- replace:
-    dest=abc.conf
-    regexp='horse'
-    replace='dog'
-    backup=yes
+---
+- hosts: all
+  tasks:
+    - replace:
+        dest=/usr/share/javascript/proxmox-widget-toolkit/test2.txt
+        regexp='Ext.Msg.show({'
+        replace='void({'
+        backup=yes
