@@ -2,7 +2,7 @@
 - hosts: all  
   tasks: 
     - name: Fix no vaild subscription
-      lineinfile:  
+      ansible.builtin.lineinfile:  
         path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
         regexp: '^Ext.Msg.show'
         line: 'void'
