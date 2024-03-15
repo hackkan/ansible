@@ -6,7 +6,7 @@
         path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
         regexp: '^(.*)Ext\.Msg\.show\(\{(.*)$\n^(.*)No valid subscription(.*)$'
         replace: '\1void({\2\n\3No valid subscription\4'
-    - name: Restart Proxmox service
-      ansible.builtin.service:
-        name: pveproxy.service
-        state: restarted
+ #   - name: Restart Proxmox service
+ #     ansible.builtin.service:
+ #       name: pveproxy.service
+ #       state: restarted
