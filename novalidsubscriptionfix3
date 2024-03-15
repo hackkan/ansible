@@ -1,12 +1,12 @@
 ---
 - hosts: all  
   tasks: 
-    - name: Replace a line  
+    - name: Fix no vaild subscription
       lineinfile:  
         path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
         regexp: ^Ext.Msg.show
         line: void
-    - name: Restart service httpd, in all cases
+    - name: Restart Proxmox service
       ansible.builtin.service:
         name: pveproxy.service
         state: restarted
