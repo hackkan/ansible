@@ -6,4 +6,4 @@
         ansible.builtin.lineinfile:
           path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
           regexp: '^Ext.Msg.show..'
-          line: 'void({'
+          line: void({
