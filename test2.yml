@@ -4,5 +4,5 @@
     - name: Fix no vaild subscription
       ansible.builtin.lineinfile:
         path: /usr/share/javascript/proxmox-widget-toolkit/test2.txt
-        regexp: '^Ext\.Msg\.show\('
+        regexp: '^Ext\.Msg\.show\($'
         line: void
