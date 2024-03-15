@@ -1,0 +1,5 @@
+- replace:
+    dest=abc.conf
+    regexp='horse'
+    replace='dog'
+    backup=yes
