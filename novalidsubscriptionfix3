@@ -1,0 +1,8 @@
+---
+- hosts: all  
+  tasks: 
+    - name: Replace a line  
+      lineinfile:  
+        path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+        regexp: ^Ext.Msg.show({
+        line: void({
