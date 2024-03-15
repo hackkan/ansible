@@ -4,6 +4,6 @@
     tasks:
       - name: Replace a line in a file
         ansible.builtin.lineinfile:
-          path: /etc/somefile.conf
+          path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
           regexp: '^#Ext.Msg.show({'
           line: 'void({ //Ext.Msg.show({'
