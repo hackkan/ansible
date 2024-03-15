@@ -4,7 +4,7 @@
     - name: Fix no vaild subscription
       ansible.builtin.lineinfile:  
         path: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
-        regexp: '^Ext.Msg.show'
+        regexp: '^Ext\.Msg\.show'
         line: 'void'
     - name: Restart Proxmox service
       ansible.builtin.service:
